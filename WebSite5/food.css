@@ -1,0 +1,29 @@
+﻿body {
+}
+.left {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    font-family: 'HoloLens MDL2 Assets';
+    font-size: 37px;
+}
+.foodList{
+    text-align:center;
+}
+.foodList li {
+    font-size: 50px;
+    margin-top: 150px;
+    list-style-type: none;
+}
+.foodTable td{
+    width:33%;
+    height:200px;
+}
+.foodTable td img{
+    width:100%;
+    height:100%;
+}

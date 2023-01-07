@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="frame.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="head">
+        <div class="themeHead">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+        <div class="navHead">
+            <div class="icon">
+                <img src="images/icon.png"/>
+            </div>
+            <table class="nav">
+                <tr>
+                    <td><a href="index.aspx">首页</a></td>
+                    <td><a href="history.aspx">历史</a></td>
+                    <td><a href="renwen.aspx">人文风情</a></td>
+                    <td><a href="beauty.aspx">自然景观</a></td>
+                    <td><a href="food.aspx">特色美食</a></td>
+                    <td><a href="school.aspx">就读高中</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="bodyContent">
+        <table>
+            <tr>
+                <td class="contentLeft">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td class="contentRight">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="foot">
+        浙江省台州市温岭市copyright:@Khalil三省
+    </div>
+    </form>
+</body>
+</html>
